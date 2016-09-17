@@ -25,6 +25,23 @@ import java.util.List;
  * @author Michael <GrubenM@GMail.com>
  */
 public class Solution {
+    
+    /**
+     * Given an integer, return that many rows of Pascal's Triangle.
+     * 
+     * A triangular index is used here, as follows:
+     *      [0]  [1]             [2]               [3]        ... [m] {j}
+     * [0]   1
+     * [1]   1    1
+     * [2]   1    2               1
+     * [3]   1    3               3                 1
+     * ...
+     * [n]   1 1+[n-1][1] [n-1][1]+[n-1][2] [n-1][2]+[n-1][3] ...  1
+     * {i}
+     * 
+     * @param numRows
+     * @return 
+     */
     public List<List<Integer>> generate(int numRows) {
         List<List<Integer>> ans = new ArrayList<>();
         
