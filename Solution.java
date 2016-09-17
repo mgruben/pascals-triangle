@@ -1,3 +1,7 @@
+
+import java.util.ArrayList;
+import java.util.List;
+
 /*
  * Copyright (C) 2016 Michael <GrubenM@GMail.com>
  *
@@ -20,7 +24,10 @@
  * @author Michael <GrubenM@GMail.com>
  */
 public class Solution {
-
+    public List<List<Integer>> generate(int numRows) {
+        List<List<Integer>> ans = new ArrayList<>();
+        return ans;
+    }
     /**
      * @param args the command line arguments
      */
