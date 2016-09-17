@@ -1,5 +1,6 @@
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /*
@@ -26,13 +27,16 @@ import java.util.List;
 public class Solution {
     public List<List<Integer>> generate(int numRows) {
         List<List<Integer>> ans = new ArrayList<>();
+        if (numRows <= 0) return ans;
+        ans.add(new ArrayList<Integer>(Arrays.asList(1)));
         return ans;
     }
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Solution sol = new Solution();
+        System.out.println(sol.generate(1));
     }
     
 }
