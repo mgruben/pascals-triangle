@@ -27,11 +27,17 @@ import java.util.List;
 public class Solution {
     public List<List<Integer>> generate(int numRows) {
         List<List<Integer>> ans = new ArrayList<>();
+        
+        // Handle bad numRows input
         if (numRows <= 0) return ans;
         ans.add(new ArrayList<>(Arrays.asList(1)));
+        
+        // Handle just wanting the first row
         if (numRows == 1) return ans;
         ans.add(new ArrayList<>(Arrays.asList(1, 1)));
         int i = 2;
+        
+        // Use the above row to fill the current row, then add to ans
         while (i < numRows) {
             ArrayList<Integer> row = new ArrayList<>();
             row.add(1);
